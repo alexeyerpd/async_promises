@@ -8,7 +8,6 @@ export class GameSavingLoader {
       resolve(read());
     })
       .then(json)
-      .then((value) => new GameSaving(JSON.parse(value)))
-      .catch((e) => e);
+      .then((value) => new GameSaving(JSON.parse(value)));
   }
 }
